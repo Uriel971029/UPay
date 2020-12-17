@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#ea1c0d</color>
+    <color name="colorAccent">#FFBBBB</color>
+    <color name="YellowDark">#FFC300</color>
+    <color name="Yellow">#FFDE75</color>
+    <color name="success">#a3cc00</color>
+    <color name="purple">#AB47BC</color>
+    <color name="purpleDark">#7D3C98</color>
+    <color name="Black">#000000</color>
+    <color name="ColorActionBarTitle">#ffffff</color>
+    <color name="iron">#9E9E9E</color>
+    <color name="ironLight">#EEE</color>
+    <color name="link">#303F9F</color>
+    <color name="background_material_light">#ffffff</color>
+    <color name="PayPal">#169BD7</color>
+    <color name="PayPalDark">#003087</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+
+
+</resources>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.giovanni.upaay.Registro">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Registro de usuario"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:background="@color/ironLight"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+
+
+                <EditText
+                    android:id="@+id/etmat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:hint="matricula del alumno"
+                    android:maxLength="10"
+                    android:textColorHint="#7B7B7B"
+                    android:textSize="20dp"
+
+                    />
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/home_left_space"
+                        android:text="Buscar"
+                        android:onClick="buscar"/>
+
+                </TableRow>
+            </TableLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nombre del alumno:"/>
+
+                <EditText
+                    android:id="@+id/etnom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="José Manuel"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#7B7B7B"
+                    android:textSize="20dp"
+                    android:enabled="false"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Apellido Paterno:"/>
+
+
+                <EditText
+                    android:id="@+id/etapellidoP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Pérez"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#7B7B7B"
+                    android:textSize="20dp"
+                    android:enabled="false"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Apellido Materno:"/>
+
+
+                <EditText
+                    android:id="@+id/etapellidoM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="López"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#7B7B7B"
+                    android:textSize="20dp"
+                    android:enabled="false"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Correo electrónico:"/>
+                <EditText
+                    android:id="@+id/etcorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="abc@hotmail.com"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#7B7B7B"
+                    android:textSize="20dp"
+                    android:enabled="false"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Número telefónico:"/>
+
+                <EditText
+                    android:id="@+id/ettelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="5525354555"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColorHint="#7B7B7B"
+                    android:textSize="20dp"
+                    android:enabled="false"
+
+                    />
+
+            </LinearLayout>
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:columnCount="2"
+                android:rowCount="1"
+                >
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="@dimen/home_left_space"
+                        android:onClick="completarRegistro"
+                        android:text="Siguiente"
+                        android:textSize="20dp"
+                        android:textColor="@color/iron"
+                        android:background="@drawable/rounded_unsuccess"
+
+                        />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/home_left_space"
+                        android:onClick="cancelar"
+                        android:text="Cancelar"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/rounded"
+
+                        />
+
+
+            </GridLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/YellowDark"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

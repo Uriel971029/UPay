@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="nav_header_vertical_spacing">2dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="padd">3dp</dimen>
+    <dimen name="acercaDe_size">16dp</dimen>
+    <dimen name="acercaDe_size_titles">18dp</dimen>
+    <dimen name="acercaDe_topSpace">16dp</dimen>
+    <dimen name="home_left_space">13dp</dimen>
+    <dimen name="home_right_space">16dp</dimen>
+    <dimen name="home_top_space">20dp</dimen>
+    <dimen name="home_top_fields_space">10sp</dimen>
+    <dimen name="home_text_size">18dp</dimen>
+
+    <dimen name="franjas_size">20dp</dimen>
+
+    <dimen name="button_width">210dp</dimen>
+    <dimen name="button_height">45dp</dimen>
+
+    <dimen name="admin_menu_top_button">10dp</dimen>
+    <dimen name="foto_perfil">70dp</dimen>
+
+    <dimen name="marginTopSlide">40dp</dimen>
+
+
+</resources>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameTramites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_tramites"
+    android:orientation="vertical"
+    android:background="@color/ColorActionBarTitle"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:text="Fecha: "/>
+
+            <EditText
+                android:id="@+id/edtFecha"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textFecha"
+
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="170dp"
+                android:gravity="center"
+                android:enabled="false"
+                />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Nombre del alumno"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="60dp"
+
+
+
+                />
+
+            <EditText
+                android:id="@+id/edtNombre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNombre"
+                android:gravity="center"
+                android:background="@drawable/squared_purple"
+                android:enabled="false"
+                android:layout_marginLeft="3dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txtMatricula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtNombre"
+                android:layout_marginLeft="3dp"
+
+
+                android:text="Matrícula:" />
+
+            <EditText
+                android:id="@+id/edtMatricula"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMatricula"
+                android:gravity="center"
+                android:background="@drawable/squared_purple"
+                android:enabled="false"
+                android:layout_marginLeft="3dp"
+
+                />
+
+
+
+                <ImageView
+                    android:id="@+id/ImgFotoPerfil"
+                    android:layout_width="150dp"
+                    android:layout_height="174dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/logo" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/textSeleccionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textReferencia"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="20dp"
+                android:text="Trámite: "
+                android:textSize="17sp"
+                android:textStyle="bold"
+
+                />
+
+            <Spinner
+                android:id="@+id/listaTramites"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textSeleccionar"
+                android:layout_alignRight="@+id/textSeleccionar"
+                android:layout_alignBottom="@+id/textSeleccionar"
+                android:layout_alignParentEnd="true"
+                >
+
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textReferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Referencia:"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edtReferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textReferencia"
+                android:layout_marginLeft="@dimen/home_left_space"
+                android:layout_marginRight="3dp"
+                android:layout_toEndOf="@+id/textReferencia"
+                android:layout_toRightOf="@+id/textReferencia"
+                android:layout_weight="1"
+                android:hint="Ingrese la referencia de pago"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="24"
+                android:backgroundTint="@color/purpleDark"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/textConcepto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSeleccionar"
+                android:layout_marginLeft="5dp"
+
+                android:text="Concepto:" />
+
+            <EditText
+                android:id="@+id/edtConcepto"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textConcepto"
+                android:background="@drawable/squared_purple"
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textImporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtConcepto"
+                android:layout_marginLeft="5dp"
+
+                android:text="Importe:" />
+
+            <EditText
+                android:id="@+id/edtImporte"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textImporte"
+                android:background="@drawable/squared_purple"
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/textDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtImporte"
+                android:layout_marginLeft="5dp"
+
+                android:text="Descripción:" />
+
+            <EditText
+                android:id="@+id/edtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textDescripcion"
+                android:background="@drawable/squared_purple"
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+
+                />
+
+
+            <Button
+                android:id="@+id/btnConcepto"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@id/edtDescripcion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:text="Pagar"
+
+                android:textColor="@color/colorPrimary"
+
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/btnConcepto"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

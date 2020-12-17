@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "138222196779",
+    "firebase_url": "https://upay-140b0.firebaseio.com",
+    "project_id": "upay-140b0",
+    "storage_bucket": "upay-140b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138222196779:android:ecc14e67ab7c3727",
+        "android_client_info": {
+          "package_name": "com.example.giovanni.upaay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138222196779-8erbh8kvbghisjojosneiq7skauku8uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.giovanni.upaay",
+            "certificate_hash": "3c71ebf57d79ffa9d6819d2317fe04ee628f8ccf"
+          }
+        },
+        {
+          "client_id": "138222196779-mu1r63q5k9u6ikgkaqkve8vc0gi1li8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUMQpZbz_UnYHR5FSkxmEvLYxc9v_MmqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138222196779-mu1r63q5k9u6ikgkaqkve8vc0gi1li8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

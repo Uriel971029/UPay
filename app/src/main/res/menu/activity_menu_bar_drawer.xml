@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Inicio"
+        android:icon="@drawable/home"/>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_tramites"
+            android:title="tramites"
+            android:icon="@drawable/tramites"/>
+        <item
+            android:id="@+id/nav_estado"
+            android:title="movimientos"
+            android:icon="@drawable/historial"/>
+
+        <item
+            android:id="@+id/nav_informacion"
+            android:title="acerca de"
+            android:icon="@drawable/informacion"/>
+        <item
+            android:id="@+id/nav_salir"
+            android:title="Salir"
+            android:icon="@drawable/salir"/>
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padd"
+    tools:context=".activity_scanner">
+
+
+    <TextView
+        android:id="@+id/txtCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprobante de pago"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/Fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+
+
+        </TableRow>
+
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtConcepto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Concepto:"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/Concepto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtImporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Importe:"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/Importe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/txtPagado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagado:"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/Pagado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="50dp">
+
+
+            <Button
+                android:id="@+id/btnComprobar"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_success"
+                android:text="Validar"
+                android:textColor="@color/success"
+                android:onClick="Validar"
+                />
+
+            <Button
+                android:id="@+id/btnRechazar"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/home_left_space"
+                android:background="@drawable/rounded"
+                android:text="Rechazar"
+                android:textColor="@color/colorPrimary"
+                android:onClick="Rechazar"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/home_top_space"
+        android:background="@color/YellowDark"
+        android:gravity="center"
+        android:text="Universidad Politécnica del Estado de Morelos
+UPay© Derechos reservados"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+</LinearLayout>
